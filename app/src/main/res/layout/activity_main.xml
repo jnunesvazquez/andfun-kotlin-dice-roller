@@ -23,16 +23,17 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="137dp"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
         android:layout_gravity="center_horizontal"
-        android:textSize="30sp"/>
+        android:text="Boton"
+        android:textSize="30sp" />
 
     <Button
+        android:id="@+id/botone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="@string/dado" />
+        android:text="@string/boton" />
 
 </LinearLayout>
