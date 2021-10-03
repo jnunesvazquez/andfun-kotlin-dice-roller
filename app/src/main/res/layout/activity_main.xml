@@ -22,13 +22,12 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/resultado"
+    <ImageView
+        android:id="@+id/image"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Boton"
-        android:textSize="30sp" />
+        android:src="@drawable/imagen_base" />
 
     <Button
         android:id="@+id/botone"

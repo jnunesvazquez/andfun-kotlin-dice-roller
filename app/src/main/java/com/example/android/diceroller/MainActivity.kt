@@ -18,9 +18,10 @@ package com.example.android.diceroller
 
 import android.os.Bundle
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import java.util.*
+import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,8 +34,16 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun rollDice() {
-        val randomInt = Random().nextInt(6) + 1
-        val resultText: TextView = findViewById(R.id.resultado)
-        resultText.text = randomInt.toString()
+        val randomInt = (1 until 7).random()
+        val drawableResource = when (randomInt) {
+            1 -> R.drawable.imagen_1
+            2 -> R.drawable.imagen_2
+            3 -> R.drawable.imagen_3
+            4 -> R.drawable.imagen_4
+            5 -> R.drawable.imagen_5
+            else-> R.drawable.imagen_6
+        }
+        val imagen: ImageView = findViewById(R.id.image)
+        imagen.setImageResource(drawableResource)
     }
 }
