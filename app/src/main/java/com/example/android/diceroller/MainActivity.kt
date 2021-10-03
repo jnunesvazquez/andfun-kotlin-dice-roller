@@ -21,9 +21,16 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import java.sql.Array
+import java.util.*
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
+
+    lateinit var imagen: ImageView
+    //Lo definimos fuera de la funcion para introducirlo en el onCreate
+    private var randomInt = (1 until 7).random()
+    val array = arrayOf("","Circulo","Bilatero","Triangulo","Cuadrado","Pentagono","Hexagono")
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,10 +38,14 @@ class MainActivity : AppCompatActivity() {
         val rollButton: Button = findViewById(R.id.botone)
         rollButton.setOnClickListener {
             rollDice()
+            //Le pasamos el nombre de una Array
+            rollButton.setText(array.get(randomInt))
+            //Cambiamos el numero aleatorio a otro
+            randomInt = (1 until 7).random()
         }
+        imagen = findViewById(R.id.image)
     }
     private fun rollDice() {
-        val randomInt = (1 until 7).random()
         val drawableResource = when (randomInt) {
             1 -> R.drawable.imagen_1
             2 -> R.drawable.imagen_2
@@ -43,7 +54,6 @@ class MainActivity : AppCompatActivity() {
             5 -> R.drawable.imagen_5
             else-> R.drawable.imagen_6
         }
-        val imagen: ImageView = findViewById(R.id.image)
         imagen.setImageResource(drawableResource)
     }
 }
