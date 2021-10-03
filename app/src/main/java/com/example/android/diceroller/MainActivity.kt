@@ -29,8 +29,8 @@ class MainActivity : AppCompatActivity() {
 
     lateinit var imagen: ImageView
     //Lo definimos fuera de la funcion para introducirlo en el onCreate
-    private var randomInt = (1 until 7).random()
-    val array = arrayOf("","Circulo","Bilatero","Triangulo","Cuadrado","Pentagono","Hexagono")
+    private var randomInt = (0 until 6).random()
+    val array = arrayOf(resources.getStringArray(R.array.nombreBotones))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,17 +41,17 @@ class MainActivity : AppCompatActivity() {
             //Le pasamos el nombre de una Array
             rollButton.setText(array.get(randomInt))
             //Cambiamos el numero aleatorio a otro
-            randomInt = (1 until 7).random()
+            randomInt = (0 until 6).random()
         }
         imagen = findViewById(R.id.image)
     }
     private fun rollDice() {
         val drawableResource = when (randomInt) {
-            1 -> R.drawable.imagen_1
-            2 -> R.drawable.imagen_2
-            3 -> R.drawable.imagen_3
-            4 -> R.drawable.imagen_4
-            5 -> R.drawable.imagen_5
+            0 -> R.drawable.imagen_1
+            1 -> R.drawable.imagen_2
+            2 -> R.drawable.imagen_3
+            3 -> R.drawable.imagen_4
+            4 -> R.drawable.imagen_5
             else-> R.drawable.imagen_6
         }
         imagen.setImageResource(drawableResource)

@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">Dado Loco</string>
     <string name="boton">Punto</string>
+    <string-array name="nombreBotones">
+        <item>Circulo</item>
+        <item>Bilatero</item>
+        <item>Triangulo</item>
+        <item>Cuadrado</item>
+        <item>Pentagono</item>
+        <item>Hexagono</item>
+    </string-array>
 </resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Dizê dîn</string>
+    <string name="boton">Xal</string>
+    <string-array name="nombreBotones">
+        <item>Çember</item>
+        <item>Du alî</item>
+        <item>Sêgoşe</item>
+        <item>Meydan</item>
+        <item>Pentagon</item>
+        <item>Hexagon</item>
+    </string-array>
+</resources>

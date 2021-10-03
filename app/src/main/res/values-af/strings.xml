@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mal dobbelsteen</string>
+    <string name="boton">Punt</string>
+    <string-array name="nombreBotones">
+        <item>Sirkel</item>
+        <item>Bilateraal</item>
+        <item>Driehoek</item>
+        <item>Vierkant</item>
+        <item>Pentagon</item>
+        <item>Seshoek</item>
+    </string-array>
+</resources>
