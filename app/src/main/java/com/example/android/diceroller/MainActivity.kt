@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var imagen: ImageView
     //Lo definimos fuera de la funcion para introducirlo en el onCreate
     private var randomInt = (0 until 6).random()
-    val array = arrayOf(resources.getStringArray(R.array.nombreBotones))
+    //val array = arrayOf(resources.getStringArray(R.array.nombreBotones))
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
         rollButton.setOnClickListener {
             rollDice()
             //Le pasamos el nombre de una Array
-            rollButton.setText(array.get(randomInt))
+            //rollButton.setText(array.get(randomInt))
             //Cambiamos el numero aleatorio a otro
             randomInt = (0 until 6).random()
         }
