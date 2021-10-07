@@ -1,6 +1,6 @@
-###Primera aplicacion de Android
+## Primera aplicacion de Android
 
-##Strings con diferentes idiomas
+### Strings con diferentes idiomas
 
 Al *string.xml* creado por defecto en el proyecto le hacemos los cambios que necesitemos y luego creamos los nuevos segun los idiomas que queramos añadir
 1. Creamos uno nuevo y le añadimos un calificativo de _Locale_
@@ -9,13 +9,13 @@ Al *string.xml* creado por defecto en el proyecto le hacemos los cambios que nec
    
 [Commit](https://github.com/jnunesvazquez/andfun-kotlin-dice-roller/commit/e4a1504086d9f96ad7d69b9979443bb67a4b7a7b)
 
-##Cambiar Strings en el layout
+### Cambiar Strings en el layout
 
 1. Cambiamos el *activity_main.xml* del ***layout*** cambiando la base por un _LinearLayout_, simplificando el _TextView_ y añadiendo el _Button_ [Commit](https://github.com/jnunesvazquez/andfun-kotlin-dice-roller/commit/4fc779f35ca84796257a155ce449a65c8dc3d3ef)
 2. Añadimos la _id_ al _Button_ para luego acceder a él [Commit](https://github.com/jnunesvazquez/andfun-kotlin-dice-roller/commit/87d0a4c5b3ad98d64a3f9abd9165ab5dd098acdf)
 3. Cambiamos el _TextView_ por un _ImageView_ para que se vea una imagen [Commit](https://github.com/jnunesvazquez/andfun-kotlin-dice-roller/commit/e57d98f46f07597247b1883f1402d17bc0cc72f5)
 
-##Añadiendo imagenes
+### Añadiendo imagenes
 
 1. Cambiamos el _TextView_ por un _ImageView_ para que se vea una imagen
 2. Añadimos las imagenes en formato png
@@ -23,7 +23,7 @@ Al *string.xml* creado por defecto en el proyecto le hacemos los cambios que nec
    
    [Commit](https://github.com/jnunesvazquez/andfun-kotlin-dice-roller/commit/e57d98f46f07597247b1883f1402d17bc0cc72f5)
 
-##Cambiando la funcion random
+### Cambiando la funcion random
 
 Simplemente buscamos otra de las que se pueda utilizar en nuestro caso y las cambiamos
 ~~~
@@ -33,7 +33,7 @@ En mi caso le doy un rango (sin contar el 0) y que el valor cambie cuando pulso 
 
 [Commit](https://github.com/jnunesvazquez/andfun-kotlin-dice-roller/commit/441d98664b30a46d4ebc84c1f476f182f4a83b00)
 
-##Añadir la huella al boton
+### Añadir la huella al boton
 
 1. Implementamos en el *build.gradle* el material que utilizaremos para que la huella sea visible sobre un fondo blanco  [Commit](https://github.com/jnunesvazquez/andfun-kotlin-dice-roller/commit/3133da3e46ace550d5adf1c57f7392a2f8a87837)
 2. Cambiamos el atributo _parent_ en el *styles.xml*  [Commit](https://github.com/jnunesvazquez/andfun-kotlin-dice-roller/commit/24037e4583d92fbb93be419dc20cda29457b9db3)
