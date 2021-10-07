@@ -41,7 +41,9 @@ class MainActivity : AppCompatActivity() {
             //Le pasamos el nombre de una Array
             //rollButton.setText(array.get(randomInt))
             //Cambiamos el numero aleatorio a otro
+            //He aqui mi funcion Random
             randomInt = (0 until 6).random()
+            //He aqui mi funcion Random
         }
         imagen = findViewById(R.id.image)
     }
