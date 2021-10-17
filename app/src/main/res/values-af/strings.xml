@@ -2,12 +2,18 @@
 <resources>
     <string name="app_name">Mal dobbelsteen</string>
     <string name="boton">Punt</string>
+    <string name="figura1">Sirkel</string>
+    <string name="figura2">Bilateraal</string>
+    <string name="figura3">Driehoek</string>
+    <string name="figura4">Vierkant</string>
+    <string name="figura5">Pentagon</string>
+    <string name="figura6">Seshoek</string>
     <string-array name="nombreBotones">
-        <item>Sirkel</item>
-        <item>Bilateraal</item>
-        <item>Driehoek</item>
-        <item>Vierkant</item>
-        <item>Pentagon</item>
-        <item>Seshoek</item>
+        <item>@string/figura1</item>
+        <item>@string/figura2</item>
+        <item>@string/figura3</item>
+        <item>@string/figura4</item>
+        <item>@string/figura5</item>
+        <item>@string/figura6</item>
     </string-array>
 </resources>

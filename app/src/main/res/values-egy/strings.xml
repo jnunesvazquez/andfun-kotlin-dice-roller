@@ -2,12 +2,18 @@
 <resources>
     <string name="app_name">Dizê dîn</string>
     <string name="boton">Xal</string>
+    <string name="figura1">Çember</string>
+    <string name="figura2">Du alî</string>
+    <string name="figura3">Sêgoşe</string>
+    <string name="figura4">Meydan</string>
+    <string name="figura5">Pentagon</string>
+    <string name="figura6">Hexagon</string>
     <string-array name="nombreBotones">
-        <item>Çember</item>
-        <item>Du alî</item>
-        <item>Sêgoşe</item>
-        <item>Meydan</item>
-        <item>Pentagon</item>
-        <item>Hexagon</item>
+        <item>@string/figura1</item>
+        <item>@string/figura2</item>
+        <item>@string/figura3</item>
+        <item>@string/figura4</item>
+        <item>@string/figura5</item>
+        <item>@string/figura6</item>
     </string-array>
 </resources>

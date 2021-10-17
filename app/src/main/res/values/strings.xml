@@ -1,12 +1,18 @@
 <resources>
     <string name="app_name">Dado Loco</string>
     <string name="boton">Punto</string>
+    <string name="figura1">Circulo</string>
+    <string name="figura2">Bilatero</string>
+    <string name="figura3">Triangulo</string>
+    <string name="figura4">Cuadrado</string>
+    <string name="figura5">Pentagono</string>
+    <string name="figura6">Hexagono</string>
     <string-array name="nombreBotones">
-        <item>Circulo</item>
-        <item>Bilatero</item>
-        <item>Triangulo</item>
-        <item>Cuadrado</item>
-        <item>Pentagono</item>
-        <item>Hexagono</item>
+        <item>@string/figura1</item>
+        <item>@string/figura2</item>
+        <item>@string/figura3</item>
+        <item>@string/figura4</item>
+        <item>@string/figura5</item>
+        <item>@string/figura6</item>
     </string-array>
 </resources>
